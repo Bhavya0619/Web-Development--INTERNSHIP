@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+    <nav>
+    <a href="HTML1.html">About</a>
+    <a href="HTML2.html">Projects</a>
+    <a href="HTML3.html">To-Do</a>
+    <a href="HTML4.html">Contact</a>
+</nav>
+
+<section class="container">
+    <h2>Projects</h2>
+
+    <select id="categoryFilter" onchange="filterProducts()">
+        <option value="all">All</option>
+        <option value="web">Web</option>
+        <option value="app">App</option>
+    </select>
+
+    <select onchange="sortProducts(this.value)">
+        <option value="rating">Sort by Rating</option>
+        <option value="price">Sort by Price</option>
+    </select>
+
+    <div id="products" class="grid"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
